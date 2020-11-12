@@ -50,19 +50,26 @@ main{
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
   background: #FFFFFF;
 }
 .card:hover{
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 .card .side {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
 }
 .card .back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
   
 .card .march{
