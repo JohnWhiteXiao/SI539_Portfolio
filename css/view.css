@@ -5,6 +5,10 @@ body{
   /* position: relative; */
 }
 
+header{
+  position: static;
+}
+
 /* Navbar */
 nav{
   display: flex;
@@ -23,6 +27,10 @@ nav{
 
 nav img{
   margin: 0 6px;
+}
+
+main{
+  position: static;
 }
 
 /* Cards */
@@ -118,8 +126,13 @@ nav img{
   
   position: absolute;
   height: 40px;
-  left: 16px;
-  right: 16px;
+  width: 90%;
+  /* left: 16px;
+  right: 16px; */
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  margin-left: 5%;
+
   bottom: 28px; 
   background: #4A74B3; 
 }
@@ -275,13 +288,18 @@ h1{
   top: 888px; */
 }
 
-
 footer{
-  position: absolute;
-  padding-top: 2700px;
+  position: fixed bottom; */
+  padding-top: 2800px;
   text-align: center;
   bottom: 20px;
-  z-index: -2;
+  /* z-index: -2;
+
+  /* position: absolute;
+  text-align: center;
+  bottom: 20px;
+  width: 100%; 
+  margin: auto; */
 }
 
 

@@ -34,7 +34,7 @@ main{
 }
 
 .card-container {
-  width: 360px;
+  width: 340px;
   height: 480px;
   top: 72px;
   perspective: 600;
@@ -71,12 +71,20 @@ main{
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
 }
+
+.card .star{
+  position: absolute;
+  /* width: 24px;
+  height: 24px; */
+  left: 18px;
+  top: 18px;
+}
   
 .card .march{
   position: absolute;
   width: 200px;
   height: 36px;
-  left: 80px;
+  left: calc(50% - 200px/2);
   top: 12px;
   font-style: normal;
   font-weight: 600;
@@ -108,7 +116,7 @@ main{
   position: absolute;
   width: 300px;
   height: 48px;
-  left: 30px;
+  left: calc(50% - 300px/2);
   top: 287px;
   font-weight: 500;
   font-size: 18px;
@@ -125,22 +133,21 @@ button{
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
+
+  width: 148px;
+  height: 40px;
+  left: calc(50% - 148px/2);
 }
 
 .card .button-view{
   position: absolute;
-  width: 148px;
-  height: 40px;
-  left: 106px;
+
   top: 360px;
   background: #E42313;
 }
 
 .card .button-chat{
   position: absolute;
-  width: 148px;
-  height: 40px;
-  left: 106px;
   top: 412px;
   background: #4A74B3;
 }
@@ -190,11 +197,25 @@ button{
 
 footer{
   /* position: absolute; */
-  padding-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 40px;
   text-align: center;
   bottom: 20px;
 }
 
+.star li {
+  float: left;
+  margin-left: 9px;
+  display: inline-block;
+  color: #F0F0F0;
+  text-shadow: 0 0 1px #666666;
+  font-size: 30px;
+}
+
+.highlight,.selected {
+  color: #F4B30A;
+  text-shadow: 0 0 1px #F48F0A;
+}
 
 @media screen and (min-width: 850px){}
 

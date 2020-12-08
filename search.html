@@ -25,6 +25,7 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
+            <img class="star" id="star" src="images/star_highlight.png" onclick="fillStar()" alt="" >
             <h1 class="march">98% Match</h1><br>
             <img class="profile" src="images/profile1.jpg" alt="">
             <span class="name-observe">Joe Biden</span><br>
@@ -213,7 +214,15 @@
           </div>        
         </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="star">
+        <input type="hidden" name="rating" id="rating" />   
+        <ul>
+        <li  id="fav">?</li>
+        </ul>
+      </div>
     </main>
+    <script src="js/Portfolio.js"></script>
 
     <footer>
       <p>Search<br>
