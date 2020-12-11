@@ -10,18 +10,41 @@
   </head>
   <body>
     <header>
-    <nav>
-        <!-- JS later -->
-        <img src="images/icon_back.png" alt="back">
-        <a href="favorite.html"><img src="images/icon_favorite.png" alt="favorite"></a>
-        <a href="contact.html"><img src="images/icon_contact.png" alt="contact"></a>
-        <a href="request.html"><img src="images/icon_request.png" alt="request"></a>
-        <a href="search.html"><img src="images/icon_search.png" alt="search"></a>
-        <img src="images/icon_menu.png" alt="menu">        
-    </nav>
+      <nav>
+        <div class="nav_icon">
+          <!-- <img src="images/icon_back.png" alt="back"> -->
+          <a href="favorite.html"><img src="images/icon_favorite.png" alt="favorite"></a>
+          <a href="chat.html"><img src="images/icon_contact.png" alt="contact"></a>
+          <img src="images/icon_request.png" alt="request">
+          <a href="search.html"><img src="images/icon_search.png" alt="search"></a>
+          <img src="images/icon_menu.png" alt="menu">  
+        </div>
+        <div class="nav_text">
+          <div class="first_nav">
+            <h2>CoYard</h2>
+            <h3 class="nav_match">MATCH</hs>
+            <h3 class="nav_room">ROOM</h3>
+          </div>
+          <div class="second_nav">
+            <!-- <div class="back">
+              <img src="images/icon_back.png" alt="back">
+              <h4>Back</h4>
+            </div> -->
+            <div class="sub_nav">
+              <a href="favorite.html"><h4>Favorates</h4></a>
+              <a href="chat.html"><h4>Contact</h4></a>
+              <h4>Request</h4>
+              <a href="search.html"><h4>Search</h4></a>
+            </div>
+  
+            <a href="preference.html"><h4 class="nav_preference">Preference</h4></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+    <div class="view_middle"> 
       <div class="card-profile">
         <div class="background-profile">
           <button class="button-back" onclick="window.location.href='search.html'">back</button>
@@ -87,12 +110,13 @@
       <div class="my-photos">
         <h1>My Photos</h1>
         <div class="photo-container">
-          <img src="images/food.jpg" alt="">
-          <img src="images/ski.jpg" alt="">
-          <img src="images/rugby.jpg" alt="">
-          <img src="images/profile1.jpg" alt="">
+          <img id="1" src="images/food.jpg" alt="">
+          <img id="2" src="images/ski.jpg" alt="">
+          <img id="3" src="images/rugby.jpg" alt="">
+          <img id="4" src="images/profile1.jpg" alt="">
         </div>
       </div>
+    </div> 
     </main>
 
     <br><br><br>

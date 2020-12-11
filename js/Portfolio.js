@@ -13,13 +13,46 @@ function chatText() {
     document.getElementById("chat-box").value = null;
 }
 
-function fillStar() {
-    document.getElementById("star").src='images/star_unhighlight.png';
+function fillStar1() {
+    document.getElementById("star_1").src='images/star_highlight.png';
+}
+
+function fillStar2() {
+    document.getElementById("star_2").src='images/star_highlight.png';
+}
+
+function fillStar3() {
+    document.getElementById("star_3").src='images/star_highlight.png';
+}
+
+function fillStar4() {
+    document.getElementById("star_4").src='images/star_highlight.png';
+}
+
+function fillStar5() {
+    document.getElementById("star_5").src='images/star_highlight.png';
+}
+
+function fillStar6() {
+    document.getElementById("star_6").src='images/star_highlight.png';
 }
   
-function unFavorite() {
-    document.getElementById("star").src='images/star_unhighlight.png';
+function unFavorite1() {
+    document.getElementById("star_1").src='images/star_unhighlight.png';
     document.getElementById("1").style.display = "none";
 }
 
+function unFavorite2() {
+    document.getElementById("star_2").src='images/star_unhighlight.png';
+    document.getElementById("2").style.display = "none";
+}
 
+function unFavorite3() {
+    document.getElementById("star_3").src='images/star_unhighlight.png';
+    document.getElementById("3").style.display = "none";
+}
+
+function unFavorite4() {
+    document.getElementById("star_4").src='images/star_unhighlight.png';
+    document.getElementById("4").style.display = "none";
+}

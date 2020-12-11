@@ -10,18 +10,52 @@
   </head>
   <body>
     <header>
-      <a class="profile-chat" href="view.html"><img src="images/profile1.jpg" alt="profile1"></a>
-      <h1 class="name-chat">Tom Smith</h1>
-      <a class="quit" href="view.html"><img src="images/quit.png" alt="quit"></a>
+      <nav>
+        <div class="nav_icon">
+          <!-- <img src="images/icon_back.png" alt="back"> -->
+          <a href="favorite.html"><img src="images/icon_favorite.png" alt="favorite"></a>
+          <a href="chat.html"><img src="images/icon_contact_selected.png" alt="contact"></a>
+          <img src="images/icon_request.png" alt="request">
+          <a href="search.html"><img src="images/icon_search.png" alt="search"></a>
+          <img src="images/icon_menu.png" alt="menu">  
+        </div>
+        <div class="nav_text">
+          <div class="first_nav">
+            <h2>CoYard</h2>
+            <h3 class="nav_match">MATCH</hs>
+            <h3 class="nav_room">ROOM</h3>
+          </div>
+          <div class="second_nav">
+            <!-- <div class="back">
+              <img src="images/icon_back.png" alt="back">
+              <h4>Back</h4>
+            </div> -->
+            <div class="sub_nav">
+              <a href="favorite.html"><h4>Favorates</h4></a>
+              <a href="chat.html"><h4 class="highlight">Contact</h4></a>
+              <h4>Request</h4>
+              <a href="search.html"><h4>Search</h4></a>
+            </div>
+  
+            <a href="preference.html"><h4 class="nav_preference">Preference</h4></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <div class="chat-title">
+        <a class="profile-chat" href="view.html"><img src="images/profile1.jpg" alt="profile1"></a>
+        <h1 class="name-chat">Tom Smith</h1>
+        <a class="quit" href="view.html"><img src="images/quit.png" alt="quit"></a>
+      </div>
       <div class="chat-record" id="chat-record">
         <span class="time">Today. 23:55</span>
         <span class="chat-partner">I am looking for a roommate in the same program as me.</span>
         <span class="chat-me" id="chat-me">Haha I just got the offer of MSI. I’ll fly to AA this September.</span>
       </div>
       <div class="chat-tool">
+        <label for="chat-box">message</label>
         <input class="chat-box" id="chat-box" type="text" placeholder="Type your message...">
         <span class="chat-text"><img src="images/chat-text.png" alt=""></span>
         <span class="emoji"><img src="images/emoji.png" alt=""></span>

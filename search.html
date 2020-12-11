@@ -11,22 +11,45 @@
   <body>
     <header>
     <nav>
-        <!-- JS later -->
-        <img src="images/icon_back.png" alt="back">
+      <div class="nav_icon">
+        <!-- <img src="images/icon_back.png" alt="back"> -->
         <a href="favorite.html"><img src="images/icon_favorite.png" alt="favorite"></a>
-        <a href="contact.html"><img src="images/icon_contact.png" alt="contact"></a>
-        <a href="request.html"><img src="images/icon_request.png" alt="request"></a>
+        <a href="chat.html"><img src="images/icon_contact.png" alt="contact"></a>
+        <img src="images/icon_request.png" alt="request">
         <a href="search.html"><img src="images/icon_search_selected.png" alt="search"></a>
-        <img src="images/icon_menu.png" alt="menu">        
+        <img src="images/icon_menu.png" alt="menu">  
+      </div>
+      <div class="nav_text">
+        <div class="first_nav">
+          <h2>CoYard</h2>
+          <h3 class="nav_match">MATCH</hs>
+          <h3 class="nav_room">ROOM</h3>
+        </div>
+        <div class="second_nav">
+          <!-- <div class="back">
+            <img src="images/icon_back.png" alt="back">
+            <h4>Back</h4>
+          </div> -->
+          <div class="sub_nav">
+            <a href="favorite.html"><h4>Favorates</h4></a>
+            <a href="chat.html"><h4>Contact</h4></a>
+            <h4>Request</h4>
+            <a href="search.html"><h4 class="highlight">Search</h4></a>
+          </div>
+
+          <a href="preference.html"><h4 class="nav_preference">Preference</h4></a>
+        </div>
+      </div>
     </nav>
     </header>
 
     <main>
+    <div class="all_card">
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <img class="star" id="star" src="images/star_highlight.png" onclick="fillStar()" alt="" >
-            <h1 class="march">98% Match</h1><br>
+            <img class="star" id="star_1" src="images/star_unhighlight.png" onclick="fillStar1()" alt="" >
+            <h1 class="match">98% Match</h1><br>
             <img class="profile" src="images/profile1.jpg" alt="">
             <span class="name-observe">Joe Biden</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -58,7 +81,8 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <h1 class="march">94% Match</h1><br>
+            <img class="star" id="star_2" src="images/star_unhighlight.png" onclick="fillStar2()" alt="" >
+            <h1 class="match">94% Match</h1><br>
             <img class="profile" src="images/profile2.jpg" alt="">
             <span class="name-observe">Donald Trump</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -90,7 +114,8 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <h1 class="march">98% Match</h1><br>
+            <img class="star" id="star_3" src="images/star_unhighlight.png" onclick="fillStar3()" alt="" >
+            <h1 class="match">98% Match</h1><br>
             <img class="profile" src="images/profile3.jpg" alt="">
             <span class="name-observe">Tom Smith</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -122,7 +147,8 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <h1 class="march">98% Match</h1><br>
+            <img class="star" id="star_4" src="images/star_unhighlight.png" onclick="fillStar4()" alt="" >
+            <h1 class="match">98% Match</h1><br>
             <img class="profile" src="images/profile4.jpg" alt="">
             <span class="name-observe">Tom Smith</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -154,7 +180,8 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <h1 class="march">98% Match</h1><br>
+            <img class="star" id="star_5" src="images/star_unhighlight.png" onclick="fillStar5()" alt="" >
+            <h1 class="match">98% Match</h1><br>
             <img class="profile" src="images/profile5.jpg" alt="">
             <span class="name-observe">Tom Smith</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -186,7 +213,8 @@
       <div class="card-container">
         <div class="card">
           <div class="side">
-            <h1 class="march">98% Match</h1><br>
+            <img class="star" id="star_6" src="images/star_unhighlight.png" onclick="fillStar6()" alt="" >
+            <h1 class="match">98% Match</h1><br>
             <img class="profile" src="images/profile6.jpg" alt="">
             <span class="name-observe">Tom Smith</span><br>
             <span class="info-observe">22, Virgo, Male, American, Junior,<br>Major in Architecture</span><br>
@@ -214,13 +242,7 @@
           </div>        
         </div>
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <div class="star">
-        <input type="hidden" name="rating" id="rating" />   
-        <ul>
-        <li  id="fav">?</li>
-        </ul>
-      </div>
+    </div>
     </main>
     <script src="js/Portfolio.js"></script>
 

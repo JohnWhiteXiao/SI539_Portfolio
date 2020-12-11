@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+    <title>Chat</title>
+
+    <style>
+      .parallax {
+        /* The image used */
+        background-image: url("images/ski.jpg");
+      
+        /* Set a specific height */
+        min-height: 500px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #4A74B3;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #4A74B3;
+      }
+      
+      .form {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_icon">
+          <!-- <img src="images/icon_back.png" alt="back"> -->
+          <a href="favorite.html"><img src="images/icon_favorite.png" alt="favorite"></a>
+          <a href="chat.html"><img src="images/icon_contact_selected.png" alt="contact"></a>
+          <img src="images/icon_request.png" alt="request">
+          <a href="search.html"><img src="images/icon_search.png" alt="search"></a>
+          <img src="images/icon_menu.png" alt="menu">  
+        </div>
+        <div class="nav_text">
+          <div class="first_nav">
+            <h2>CoYard</h2>
+            <h3 class="nav_match">MATCH</hs>
+            <h3 class="nav_room">ROOM</h3>
+          </div>
+          <div class="second_nav">
+            <!-- <div class="back">
+              <img src="images/icon_back.png" alt="back">
+              <h4>Back</h4>
+            </div> -->
+            <div class="sub_nav">
+              <a href="favorite.html"><h4>Favorates</h4></a>
+              <a href="chat.html"><h4>Contact</h4></a>
+              <h4>Request</h4>
+              <a href="search.html"><h4>Search</h4></a>
+            </div>
+  
+            <a href="preference.html"><h4 class="nav_preference">Preference</h4></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+      
+      <div class="parallax"></div>
+      
+      <style>
+
+        </style>
+        <body>
+        
+        <h3>Your Information</h3>
+        
+        <div class="form">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Your age..">
+
+            <label for="sex">Sex</label>
+            <input type="text" id="sex" name="sex" placeholder="Your sex..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">China</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="major">Major</label>
+            <select id="major" name="major">
+              <option value="architecture">Architecture</option>
+              <option value="computer">Computer Science</option>
+              <option value="enginneer">Enginneer</option>
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+        </body>
+
+
+        
+    </main>
+
+    <br><br><br>
+    <footer>
+      <p>Chat<br/>
+        &copy; Zhonghao(John) Xiao-2020</p>
+    </footer>
+  </body>
+</html>
